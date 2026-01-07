@@ -1,4 +1,3 @@
-
 CursoPython Simón@Sai MINGW64 ~
 $ git--version
 bash: git--version: command not found
@@ -847,4 +846,845 @@ CursoPython Simón@Sai MINGW64 ~/Desktop
 $ ^C
 
 CursoPython Simón@Sai MINGW64 ~/Desktop
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ ls
+'CRUISING APP.lnk'*                      'Visual Studio Code.lnk'*
+ ClaseGit/                               'WEB Interactiva 3'/
+ ClaseGit2/                              'Web EntreMuchos APP'/
+'Curso Desarrollo Aplicaciones Python'/  'Web Interactiva'/
+'Curso de POO'/                          'Web Interactiva 2'/
+'Curso de Python SIMON'/                  desktop.ini
+'Data Science.lnk'*                       estructuras/
+'Git Bash.lnk'*                           personalizarWeb.rar
+'Google Chrome.lnk'*                      python-manager-25.2.msix
+'Microsoft Edge.lnk'*                     webbootstrap/
+ PUGS/                                    webbootstrap.rar
+'Primera WEB'/                            webconcss/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ClaseGit2/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TrabajoEnGit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add TrabajoEnGit.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TrabajoEnGit.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TrabajoEnGit.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m "Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git"
+[main 541c997] Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+ 1 file changed, 850 insertions(+)
+ create mode 100644 TrabajoEnGit.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.91 KiB | 3.91 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   fb526e2..541c997  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Captura de pantalla 2026-01-07 091725.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Captura de pantalla 2026-01-07 091725.png
+fatal: pathspec 'Captura' did not match any files
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Captura_de_pantalla_2026-01-07_091725.png
+fatal: pathspec 'Captura_de_pantalla_2026-01-07_091725.png' did not match any files
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add 'Captura de pantalla 2026-01-07 091725.png'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Captura de pantalla 2026-01-07 091725.png
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m " Se agrega imagen con el flujo de Git"
+[main 84521a1]  Se agrega imagen con el flujo de Git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Captura de pantalla 2026-01-07 091725.png
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 69.14 KiB | 17.29 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   541c997..84521a1  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+
+ALOHA
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git restore Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+
+
+
+ALOHAAAA TE DIJEE!!
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ restore Hola.txt
+Directory /usr/etc/backup is not found.
+The following directories and files are needed for the backup to function:
+
+1. Directory with configuration files and file lists:
+/usr/etc/backup
+2. Directory for backup log files
+/usr/etc/backup/log
+3. Main configuration file
+/usr/etc/backup/backup-specs
+
+Please, create these and invoke the script again.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git restore Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+
+
+
+ALOHAAAA TE DIJEE!!
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git restore Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+
+
+
+ALOHAAAA TE DIJEE!!
+
+
+jakajkaajjkjaja
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git restore Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git restore --stage Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ gut status
+bash: gut: command not found
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git diff Hola.txt
+diff --git a/Hola.txt b/Hola.txt
+index 222282b..16a74bd 100644
+--- a/Hola.txt
++++ b/Hola.txt
+@@ -1 +1,8 @@
+-Hola mundo
+\ No newline at end of file
++Hola mundo
++
++
++
++ALOHAAAA TE DIJEE!!
++
++
++jakajkaajjkjaja
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git restore Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Captura de pantalla 2026-01-07 091725.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Flujo de Trabajo de Git.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add 'Flujo de Trabajo de Git.png'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Flujo de Trabajo de Git.png
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Captura de pantalla 2026-01-07 091725.png
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add .
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    Captura de pantalla 2026-01-07 091725.png -> Flujo de Trabajo de Git.png
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m "Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'"
+[main 151b68a] Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Captura de pantalla 2026-01-07 091725.png => Flujo de Trabajo de Git.png (100%)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 288 bytes | 288.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   84521a1..151b68a  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git branch
+* main
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout -b RamaC
+Switched to a new branch 'RamaC'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git log
+commit 151b68a61bf86a24f6f57fb31ddb054ae72bee19 (HEAD -> RamaC, origin/main, main)
+Author: Simon Castillo <simon.castillo.a@gmail.com>
+Date:   Wed Jan 7 09:49:50 2026 -0300
+
+    Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+
+commit 84521a1a3838f8ce3052e35ad8d285dfcdc1cc0a
+Author: Simon Castillo <simon.castillo.a@gmail.com>
+Date:   Wed Jan 7 09:26:27 2026 -0300
+
+     Se agrega imagen con el flujo de Git
+
+commit 541c9974a40a7eba9355d23a755aa23ab209d2de
+Author: Simon Castillo <simon.castillo.a@gmail.com>
+Date:   Wed Jan 7 09:20:44 2026 -0300
+
+    Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+
+commit fb526e2de5f2b8b798e2157920dbfb4f2dd79f17
+Author: Simon Castillo <simon.castillo.a@gmail.com>
+Date:   Tue Jan 6 12:35:28 2026 -0300
+
+    Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+
+commit 08092f8f4e58a7b925aac42a029d3e6369068d5b (tag: VersionConError)
+Author: Simon Castillo <simon.castillo.a@gmail.com>
+Date:   Tue Jan 6 12:25:06 2026 -0300
+
+    Se crea el archivo Simon.txt
+
+commit 60e5448595955e205e61f938f1fcfe4010bfdf10
+Author: Simon Castillo <simon.castillo.a@gmail.com>
+Date:   Tue Jan 6 12:20:54 2026 -0300
+
+    Se le agrega texto al archivo Adios.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git log --oneline
+151b68a (HEAD -> RamaC, origin/main, main) Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+84521a1  Se agrega imagen con el flujo de Git
+541c997 Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+fb526e2 Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 (tag: VersionConError) Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 (tag: Version1.3) SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ cat Hola.txt
+Hola mundo
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git status
+On branch RamaC
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ cat Hola.txt
+Hola mundo
+
+
+Este es un cambio realizado en la RamaC
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git add Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git status
+On branch RamaC
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git commit -m " Se Modifica archivo Hola.txt desde la RamaC
+> q
+> "
+[RamaC 6df2fe1]  Se Modifica archivo Hola.txt desde la RamaC q
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git status
+On branch RamaC
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout RamaC
+Switched to branch 'RamaC'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ cat Hola.txt
+Hola mundo
+
+
+Este es un cambio realizado en la RamaC
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout RamaC
+Switched to branch 'RamaC'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git merge RamaC
+Updating 151b68a..6df2fe1
+Fast-forward
+ Hola.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat Hola.txt
+Hola mundo
+
+
+Este es un cambio realizado en la RamaC
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ gut status
+bash: gut: command not found
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reptiles.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add reptiles.txt
+fatal: pathspec 'reptiles.txt' did not match any files
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reptiles.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add reptiles.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   reptiles.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m " Se crea archivo reptiles.txt"
+[main 85f09c2]  Se crea archivo reptiles.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 reptiles.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout RamaC
+Switched to branch 'RamaC'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaC)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git log --oneline
+85f09c2 (HEAD -> main)  Se crea archivo reptiles.txt
+6df2fe1 (RamaC)  Se Modifica archivo Hola.txt desde la RamaC q
+151b68a (origin/main) Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+84521a1  Se agrega imagen con el flujo de Git
+541c997 Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+fb526e2 Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 (tag: VersionConError) Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 (tag: Version1.3) SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout -b RamaD
+Switched to a new branch 'RamaD'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ cat reptiles.txt
+ks ks ks ksssss
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git status
+On branch RamaD
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   reptiles.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git add reptiles.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git status
+On branch RamaD
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   reptiles.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git commit-m " Se agregaron 3 reptiles al archivo reptiles.txt"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git commit -m "Se agregaron 3 reptiles al archivo reptiles.txt"
+[RamaD 94bd8a9] Se agregaron 3 reptiles al archivo reptiles.txt
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git status
+On branch RamaD
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout RamaD
+Switched to branch 'RamaD'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git log --oneline
+85f09c2 (HEAD -> main)  Se crea archivo reptiles.txt
+6df2fe1 (RamaC)  Se Modifica archivo Hola.txt desde la RamaC q
+151b68a (origin/main) Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+84521a1  Se agrega imagen con el flujo de Git
+541c997 Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+fb526e2 Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 (tag: VersionConError) Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 (tag: Version1.3) SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout RamaD
+Switched to branch 'RamaD'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git log --oneline
+94bd8a9 (HEAD -> RamaD) Se agregaron 3 reptiles al archivo reptiles.txt
+85f09c2 (main)  Se crea archivo reptiles.txt
+6df2fe1 (RamaC)  Se Modifica archivo Hola.txt desde la RamaC q
+151b68a (origin/main) Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+84521a1  Se agrega imagen con el flujo de Git
+541c997 Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+fb526e2 Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 (tag: VersionConError) Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 (tag: Version1.3) SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git checkout RamaD
+Switched to branch 'RamaD'
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (RamaD)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git merge RamaD
+Updating 85f09c2..94bd8a9
+Fast-forward
+ reptiles.txt | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git log --oneline
+94bd8a9 (HEAD -> main, RamaD) Se agregaron 3 reptiles al archivo reptiles.txt
+85f09c2  Se crea archivo reptiles.txt
+6df2fe1 (RamaC)  Se Modifica archivo Hola.txt desde la RamaC q
+151b68a (origin/main) Se cambia nombre a Captura, se lle llama 'Flujo de trabajo de Git'
+84521a1  Se agrega imagen con el flujo de Git
+541c997 Se agrega archivo TrabajoEnGit.txt que explica lo que se hizo en la primera clase de Git
+fb526e2 Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 (tag: VersionConError) Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 (tag: Version1.3) SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cat reptiles.txt
+
+
+Iguana
+Serpiente
+Camaleón
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
 $
