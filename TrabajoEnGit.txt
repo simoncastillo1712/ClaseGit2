@@ -1,0 +1,850 @@
+
+CursoPython Simón@Sai MINGW64 ~
+$ git--version
+bash: git--version: command not found
+
+CursoPython Simón@Sai MINGW64 ~
+$ git --version
+git version 2.52.0.windows.1
+
+CursoPython Simón@Sai MINGW64 ~
+$ git config --global user.name "Sai"
+
+CursoPython Simón@Sai MINGW64 ~
+$ git config --global user.mail
+2
+CursoPython Simón@Sai MINGW64 ~
+$ git config --global user.mail "simon.castillo.a@gmail.com"
+
+CursoPython Simón@Sai MINGW64 ~
+$ code.
+bash: code.: command not found
+
+CursoPython Simón@Sai MINGW64 ~
+$ code .
+
+CursoPython Simón@Sai MINGW64 ~
+$ pwd
+/c/Users/CursoPython Simón
+
+CursoPython Simón@Sai MINGW64 ~
+$ ls
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ Links/
+'Menú Inicio'@
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TM.blf
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sti_Trace.log
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pseint/
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd Desktop/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd desktop/
+
+CursoPython Simón@Sai MINGW64 ~/desktop
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd D
+Datos de programa/ Desktop/           Documents/         Downloads/
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd Desktop/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ ls
+'Affinity x64.msix'                      'Visual Studio Code.lnk'*
+'CRUISING APP.lnk'*                      'WEB Interactiva 3'/
+'Curso Desarrollo Aplicaciones Python'/  'Web EntreMuchos APP'/
+'Curso de POO'/                          'Web Interactiva'/
+'Curso de Python SIMON'/                 'Web Interactiva 2'/
+'Data Science.lnk'*                       desktop.ini
+'Git Bash.lnk'*                           estructuras/
+ Git-2.52.0-64-bit.exe*                   personalizarWeb.rar
+'Google Chrome.lnk'*                      python-manager-25.2.msix
+'Microsoft Edge.lnk'*                     webbootstrap/
+ PUGS/                                    webbootstrap.rar
+'Primera WEB'/                            webconcss/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd Curso\ De
+Curso Desarrollo Aplicaciones Python/ Curso de Python SIMON/
+Curso de POO/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd Curso\ Desarrollo\ Aplicaciones\ Python/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/Curso Desarrollo Aplicaciones Python
+$ ls
+ Clases/
+ Codigos/
+'DESARROLLO DE APLICACIONES FULLSTACK PYTHON TRAINEE plan formativo.pdf'
+ Ejercicios/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/Curso Desarrollo Aplicaciones Python
+$ cd..
+bash: cd..: command not found
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/Curso Desarrollo Aplicaciones Python
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd Desktop
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ mkdir ClaseGit
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ClaseGit
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit
+$ git init
+Initialized empty Git repository in C:/Users/CursoPython Simón/Desktop/ClaseGit/.git/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ ls -a
+./  ../  .git/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ cd .git
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit/.git (GIT_DIR!)
+$ ls -a
+./  ../  HEAD  config  description  hooks/  info/  objects/  refs/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit/.git (GIT_DIR!)
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ ls
+archivo.txt.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git add .
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   archivo.txt.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -m "Creacion de archivo.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'CursoPython Simón@Sai.(none)')
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git --config user.email "simon.castillo.a@gmail.com"
+unknown option: --config
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -m "Creacion de archivo.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'CursoPython Simón@Sai.(none)')
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~
+$ ls
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ Links/
+'Menú Inicio'@
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TM.blf
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sti_Trace.log
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pseint/
+
+CursoPython Simón@Sai MINGW64 ~
+$ ls -a
+ ./
+ ../
+ .affinity/
+ .codex/
+ .gitconfig
+ .ipython/
+ .matplotlib/
+ .ms-ad/
+ .python_history
+ .vscode/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ Links/
+'Menú Inicio'@
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TM.blf
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sti_Trace.log
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pseint/
+
+CursoPython Simón@Sai MINGW64 ~
+$ git --config global user.email "simon.castillo.a@gmail.com"
+unknown option: --config
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+CursoPython Simón@Sai MINGW64 ~
+$ git config --global user.email "simon.castillo.a@gmail.com"
+
+CursoPython Simón@Sai MINGW64 ~
+$ git config --global user.name "Simon Castillo"
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd desktop
+
+CursoPython Simón@Sai MINGW64 ~/desktop
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~
+$ ls
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ Links/
+'Menú Inicio'@
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TM.blf
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{82a36462-d7fe-11ef-913c-f3f57da03493}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sti_Trace.log
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pseint/
+
+CursoPython Simón@Sai MINGW64 ~
+$ cd Desktop
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ ls
+'CRUISING APP.lnk'*                      'WEB Interactiva 3'/
+ ClaseGit/                               'Web EntreMuchos APP'/
+'Curso Desarrollo Aplicaciones Python'/  'Web Interactiva'/
+'Curso de POO'/                          'Web Interactiva 2'/
+'Curso de Python SIMON'/                  desktop.ini
+'Data Science.lnk'*                       estructuras/
+'Git Bash.lnk'*                           personalizarWeb.rar
+'Google Chrome.lnk'*                      python-manager-25.2.msix
+'Microsoft Edge.lnk'*                     webbootstrap/
+ PUGS/                                    webbootstrap.rar
+'Primera WEB'/                            webconcss/
+'Visual Studio Code.lnk'*
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ClaseGit
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -m "Creación de archivo.txt"
+[master (root-commit) 8193069] Creación de archivo.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 archivo.txt.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git add archivo.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   archivo.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo.txt.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -m "Eliminación de Archivo anterior mal creado, y creación de nuevo archivo.txt"
+[master dd5bf63] Eliminación de Archivo anterior mal creado, y creación de nuevo archivo.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 archivo.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -a archivo.txt.txt
+fatal: paths 'archivo.txt.txt ...' with -a does not make sense
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git add archivo.txt.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo.txt.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -m "Eliminé el archivo porque tenia una extension incorrecta"
+[master 97dfc92] Eliminé el archivo porque tenia una extension incorrecta
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 archivo.txt.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        archivo2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git add archivo2.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   archivo2.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git commit -m "Se crea el archivo archivo2.txt"
+[master fef25c9] Se crea el archivo archivo2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 archivo2.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit (master)
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ git clone https://github.com/simoncastillo1712/ClaseGit2.git
+Cloning into 'ClaseGit2'...
+warning: You appear to have cloned an empty repository.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ ls
+'CRUISING APP.lnk'*                      'Visual Studio Code.lnk'*
+ ClaseGit/                               'WEB Interactiva 3'/
+ ClaseGit2/                              'Web EntreMuchos APP'/
+'Curso Desarrollo Aplicaciones Python'/  'Web Interactiva'/
+'Curso de POO'/                          'Web Interactiva 2'/
+'Curso de Python SIMON'/                  desktop.ini
+'Data Science.lnk'*                       estructuras/
+'Git Bash.lnk'*                           personalizarWeb.rar
+'Google Chrome.lnk'*                      python-manager-25.2.msix
+'Microsoft Edge.lnk'*                     webbootstrap/
+ PUGS/                                    webbootstrap.rar
+'Primera WEB'/                            webconcss/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd ClaseGit2
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ ls
+Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hola.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hola.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m " Se crea el archivo Hola.txt"
+[main (root-commit) c375603]  Se crea el archivo Hola.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 241 bytes | 241.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/simoncastillo1712/ClaseGit2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Adios.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Adios.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Adios.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m "SE CREA EL ARCHIVO Adios.txt"
+[main 7ce1ed7] SE CREA EL ARCHIVO Adios.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Adios.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   c375603..7ce1ed7  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Adios.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Adios.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Adios.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m "Se le agrega texto al archivo Adios.txt"
+[main 60e5448] Se le agrega texto al archivo Adios.txt
+ 1 file changed, 1 insertion(+)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   7ce1ed7..60e5448  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Simon.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Simon.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Simon.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m "Se crea el archivo Simon.txt"
+[main 08092f8] Se crea el archivo Simon.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Simon.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 378 bytes | 378.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   60e5448..08092f8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Simon.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Simon Castillo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add Simon.txt Simon Castillo.txt
+fatal: pathspec 'Simon' did not match any files
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git add .
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    Simon.txt -> Simon Castillo.txt
+
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git commit -m "Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt"
+[main fb526e2] Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Simon.txt => Simon Castillo.txt (100%)
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ gut status
+bash: gut: command not found
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 295 bytes | 295.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/simoncastillo1712/ClaseGit2.git
+   08092f8..fb526e2  main -> main
+branch 'main' set up to track 'origin/main'.
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git log --oneline
+fb526e2 (HEAD -> main, origin/main) Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git tag VersionConError 08092f8
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git log --oneline
+fb526e2 (HEAD -> main, origin/main) Se cambia de nombre al archivo Simon.txt y se renombra Simon Castillo.txt
+08092f8 (tag: VersionConError) Se crea el archivo Simon.txt
+60e5448 Se le agrega texto al archivo Adios.txt
+7ce1ed7 SE CREA EL ARCHIVO Adios.txt
+c375603  Se crea el archivo Hola.txt
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git tag (Version1.3) 7ce1ed7
+bash: syntax error near unexpected token `('
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ git tag Version1.3 7ce1ed7
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cd .
+
+CursoPython Simón@Sai MINGW64 ~/Desktop/ClaseGit2 (main)
+$ cd ..
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ cd Desktop/
+bash: cd: Desktop/: No such file or directory
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ ls
+'CRUISING APP.lnk'*                      'Visual Studio Code.lnk'*
+ ClaseGit/                               'WEB Interactiva 3'/
+ ClaseGit2/                              'Web EntreMuchos APP'/
+'Curso Desarrollo Aplicaciones Python'/  'Web Interactiva'/
+'Curso de POO'/                          'Web Interactiva 2'/
+'Curso de Python SIMON'/                  desktop.ini
+'Data Science.lnk'*                       estructuras/
+'Git Bash.lnk'*                           personalizarWeb.rar
+'Google Chrome.lnk'*                      python-manager-25.2.msix
+'Microsoft Edge.lnk'*                     webbootstrap/
+ PUGS/                                    webbootstrap.rar
+'Primera WEB'/                            webconcss/
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$ ^C
+
+CursoPython Simón@Sai MINGW64 ~/Desktop
+$
